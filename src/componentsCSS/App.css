@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
+@import url(" https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+
+
+/* === מצב מובייל אנכי (Portrait) === */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    #app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: black;
+        color: white;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* אייקון טלפון מסתובב */
+    .rotate-phone-icon {
+        width: 20vw;
+        height: auto;
+        position: relative;
+        animation: rotatePhone 2.5s infinite ease-in-out;
+    }
+
+    @keyframes rotatePhone {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        30% {
+            transform: rotate(90deg);
+        }
+
+        60% {
+            transform: rotate(90deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+}

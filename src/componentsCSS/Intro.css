@@ -1,0 +1,201 @@
+
+/* === מצב מובייל רוחבי (Landscape) === */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    #intro {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        background-image: url('/public/assests/imgs/Bg1.png');
+    }
+
+    #logo-white {
+        position: absolute;
+        width: 22vw;
+        height: auto;
+        z-index: 5;
+        right: 50%;
+        transform: translateX(50%);
+        top: 5%;
+    }
+
+    #welcome-text-intro {
+              color: white;
+        font-family: "karantina";
+        font-size: 4em;
+        right: 50%;
+        transform: translateX(50%);
+        direction: rtl;
+        width: 96vw;
+        position: absolute;
+        top: 11vh;
+        text-align: center;
+    }
+
+    #introduction-sub {
+        font-family: 'Assistant', sans-serif;
+        font-size: 3vw;
+        color: white;
+        position: absolute;
+        top: 40vh;
+        width: 80vw;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        direction: rtl;
+    }
+
+    /* סרטון מוקטן */
+    .video-intro {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 95vw;
+        height: auto;
+        max-height: 95vh;
+        /* לא בגובה מלא */
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+      .skip {
+        position: absolute;
+        top: 6%;
+        left: 4%;
+        background-color: transparent;
+        font-family: 'Assistant', sans-serif;
+        font-size: 1.5em;
+        color: black;
+        z-index: 9999999;
+        border: none;
+        font-weight: bolder;
+    }
+
+    .hpArrow-intro {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 10vw;
+        animation: bounceintroM 2s ease infinite;
+    }
+
+    @keyframes bounceintroM {
+        0% {
+            top: 70%;
+        }
+
+        50% {
+            top: 75%;
+        }
+
+        100% {
+            top: 70%;
+        }
+    }
+}
+
+/* === Desktop === */
+@media screen and (min-width: 1025px) {
+    #intro {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        background-image: url('/public/assests/imgs/Bg1.png');
+    }
+
+    #logo-white {
+        position: absolute;
+        width: 20vw;
+        height: auto;
+        z-index: 5;
+        right: 50%;
+        transform: translateX(50%);
+        top: 6%;
+    }
+
+    #welcome-text-intro {
+        color: white;
+        font-family: "karantina";
+        font-size: 10rem;
+        transform: translateX(50%);
+        right: 50%;
+        direction: rtl;
+        position: absolute;
+        top: 20vh;
+    }
+
+    #introduction-sub {
+        font-family: 'Assistant', sans-serif;
+        font-size: 2vw;
+        color: white;
+        position: absolute;
+        direction: rtl;
+        top: 48vh;
+        width: 67vw;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+    }
+
+    .hpArrow-intro {
+        position: absolute;
+        z-index: 5;
+        right: 50%;
+        transform: translateX(50%);
+        animation: bounceintroC 2s ease infinite;
+        height: 13vh;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .video-intro {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        height: 100%;
+        width: 100%;
+    }
+
+    .skip {
+        position: absolute;
+        top: 6%;
+        left: 4%;
+        background-color: transparent;
+        font-family: 'Assistant', sans-serif;
+        font-size: 3em;
+        color: black;
+        z-index: 9999999;
+        border: none;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    @keyframes bounceintroC {
+        0% {
+            bottom: 20vh;
+        }
+
+        50% {
+            bottom: 15vh;
+        }
+
+        100% {
+            bottom: 20vh;
+        }
+    }
+}

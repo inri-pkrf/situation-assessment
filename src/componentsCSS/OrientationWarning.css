@@ -1,0 +1,31 @@
+.portrait-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
+  padding: 2vh;
+}
+
+.rotate-phone-icon {
+  width: 20vw;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 2vh;
+  animation: rotatePhone 2.5s infinite ease-in-out;
+}
+
+@keyframes rotatePhone {
+  0% { transform: rotate(0deg); }
+  30% { transform: rotate(90deg); }
+  60% { transform: rotate(90deg); }
+  100% { transform: rotate(0deg); }
+}
