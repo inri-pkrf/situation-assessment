@@ -52,7 +52,6 @@
         direction: rtl;
     }
 
-    /* סרטון מוקטן */
     .video-intro {
         position: absolute;
         right: 50%;
@@ -60,7 +59,6 @@
         width: 95vw;
         height: auto;
         max-height: 95vh;
-        /* לא בגובה מלא */
         border-radius: 12px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     }

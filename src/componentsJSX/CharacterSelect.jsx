@@ -9,17 +9,15 @@ const CharacterSelect = () => {
   const navigate = useNavigate();
 
   const handleStart = () => {
-    if (!selectedCharacter || !name.trim()) {
-      setError('אנא בחר/י דמות והכנס/י שם');
-      return;
-    }
-    setError('');
-    // כאן אפשר לשמור ב-localStorage או ב-context
-    localStorage.setItem('playerName', name);
-    localStorage.setItem('character', selectedCharacter);
-    navigate('/Game'); // עמוד המשחק
-  };
-
+  if (!selectedCharacter || !name.trim()) {
+    setError('אנא בחר/י דמות והכנס/י שם');
+    return;
+  }
+  setError('');
+  sessionStorage.setItem('playerName', name);
+  sessionStorage.setItem('character', selectedCharacter);
+  navigate('/tabletGuide'); 
+};
   return (
     <div className="character-select">
       <h1 className="title">בחר/י דמות</h1>

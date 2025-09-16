@@ -1,97 +1,100 @@
 .character-select {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* כל המסך אנכי */
-  width: 100vw;  /* כל המסך רוחבי */
-  text-align: center;
-  background-color: bisque;
-  overflow: hidden; /* ללא סקרול */
-  box-sizing: border-box;
-  padding: 0 2vw; /* רווח קטן משמאל ומימין */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(209, 191, 163);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 2vw;
 }
 
 .title {
-  font-size: 3em;
-  color: white;
-  margin-bottom: 4vh;
-  font-family: "Assistant", sans-serif;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4vh;
+    font-family: "Karantina";
 }
 
 .characters {
-  display: flex;
-  gap: 8vw;
-  margin-bottom: 4vh;
-  justify-content: center;
-  flex-wrap: wrap; /* אם המסך צר, יעבור שורה חדשה */
+    display: flex;
+    gap: 8vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .character {
-  width: 25vw;
-  max-width: 180px;
-  height: auto;
-  cursor: pointer;
-  border: 4px solid transparent;
-  border-radius: 12px;
-  transition: transform 0.3s, border 0.3s;
+    width: 25vw;
+    max-width: 180px;
+    height: auto;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    transition: transform 0.3s, border 0.3s;
 }
 
 .character:hover {
-  transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .character.selected {
-  border: 4px solid #ffd700; /* זהב */
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    border: 4px solid #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
 .name-input {
-  padding: 1vh 2vw;
-  font-size: 1.2em;
-  border-radius: 8px;
-  border: none;
-  margin-bottom: 2vh;
-  text-align: center;
-  width: 40vw;
-  max-width: 300px;
+    padding: 1vh 2vw;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2vh;
+    text-align: center;
+    width: 20vw;
+    max-width: 300px;
+    font-family: "Assistant";
 }
 
 .error {
-  color: #ff4d4d;
-  font-size: 0.9em;
-  margin-bottom: 2vh;
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-bottom: 2vh;
 }
 
 .start-btn {
-  padding: 1vh 3vw;
-  font-size: 1.5em;
-  background: #0066cc;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: "Assistant", sans-serif;
-  transition: background 0.3s;
+    padding: 1vh 3vw;
+    font-size: 1.5em;
+    background: #29789c;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: "Assistant", sans-serif;
 }
 
 .start-btn:hover {
-  background: #004999;
+    background: #235884;
 }
 
 /* התאמה למובייל רוחבי */
 @media screen and (max-width: 1024px) and (orientation: landscape) {
-  .title {
-    font-size: 2em;
-  }
-  .characters {
-    gap: 5vw;
-  }
-  .character {
-    width: 17vw;
-  }
-  .name-input {
-    width: 70vw;
-    font-size: 1em;
-  }
+    .title {
+        font-size: 2em;
+    }
+
+    .characters {
+        gap: 5vw;
+    }
+
+    .character {
+        width: 25vw;
+    }
+
+    .name-input {
+        width: 40vw;
+        font-size: 1em;
+    }
 }
